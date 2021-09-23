@@ -145,9 +145,9 @@ plot(MyToothGrowth, col = fitD$cluster)
 #(c) Repeat the Q.2 taking Manhattan distance as similarity measure and note the difference
 #between the clusters as compared to that found in Q. 2.
 library(amap)
-fitK <- Kmeans(MyToothGrowth,3,method="euclidean")
+fitK <- Kmeans(MyToothGrowthscaled,3,method="euclidean")
 str(fitK)
-plot(MyToothGrowth, col=fitK$cluster, pch = 19 )
+plot(MyToothGrowthscaled, col=fitK$cluster, pch = 19 )
 
 
 #List of 4
@@ -161,9 +161,9 @@ plot(MyToothGrowth, col=fitK$cluster, pch = 19 )
 # $ size    : int [1:3] 20 21 19
 # - attr(*, "class")= chr "kmeans"
 
-fitK <- Kmeans(MyToothGrowth,3,method="manhattan")
+fitK <- Kmeans(MyToothGrowthscaled,3,method="manhattan")
 str(fitK)
-plot(MyToothGrowth, col=fitK$cluster,  pch = 19 )
+plot(MyToothGrowthscaled, col=fitK$cluster,  pch = 19 )
 
 #List of 4
 # $ cluster : Named int [1:60] 1 1 1 1 1 1 1 1 1 1 ...
