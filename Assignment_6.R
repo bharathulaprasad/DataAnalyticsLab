@@ -130,6 +130,17 @@ fitD <- dbscan(MyToothGrowthscaled, eps = 0.7, minPts = 5)
 fitD
 plot(MyToothGrowth, col = fitD$cluster)
 
+# we will get some thing like below 
+#DBSCAN clustering for 60 objects.
+#Parameters: eps = 0.7, minPts = 5
+#The clustering contains 3 cluster(s) and 0 noise points.
+#
+# 1  2  3 
+#20 20 20 
+
+#Available fields: cluster, eps, minPts
+
+
 
 #(c) Repeat the Q.2 taking Manhattan distance as similarity measure and note the difference
 #between the clusters as compared to that found in Q. 2.
