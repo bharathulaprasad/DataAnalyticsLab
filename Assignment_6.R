@@ -122,6 +122,14 @@ library(mclust)
 fitM <- Mclust(MyToothGrowthscaled)
 plot(fitM)
 
+# DENSITY-BASED CLUSTERING ----
+library(dbscan)
+kNNdistplot(MyToothGrowthscaled, k = 3)
+abline(h = 0.7, col = "red", lty = 2)
+fitD <- dbscan(MyToothGrowthscaled, eps = 0.7, minPts = 5)
+fitD
+plot(iris, col = fitD$cluster)
+
 
 #(c) Repeat the Q.2 taking Manhattan distance as similarity measure and note the difference
 #between the clusters as compared to that found in Q. 2.
