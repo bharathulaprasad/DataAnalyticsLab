@@ -128,7 +128,7 @@ kNNdistplot(MyToothGrowthscaled, k = 3)
 abline(h = 0.7, col = "red", lty = 2)
 fitD <- dbscan(MyToothGrowthscaled, eps = 0.7, minPts = 5)
 fitD
-plot(iris, col = fitD$cluster)
+plot(MyToothGrowth, col = fitD$cluster)
 
 
 #(c) Repeat the Q.2 taking Manhattan distance as similarity measure and note the difference
