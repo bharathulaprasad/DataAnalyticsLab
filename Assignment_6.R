@@ -149,6 +149,29 @@ fitK <- Kmeans(MyToothGrowth,3,method="euclidean")
 str(fitK)
 plot(MyToothGrowth, col=fitK$cluster, pch = 19 )
 
+
+#List of 4
+# $ cluster : Named int [1:60] 3 3 3 3 3 3 3 3 3 3 ...
+#  ..- attr(*, "names")= chr [1:60] "1" "2" "3" "4" ...
+# $ centers : num [1:3, 1:2] 27.08 19.2 9.68 1.75 1.14 ...
+#  ..- attr(*, "dimnames")=List of 2
+#  .. ..$ : chr [1:3] "1" "2" "3"
+#  .. ..$ : chr [1:2] "len" "dose"
+# $ withinss: num [1:3] 5.44 15.14 23.42
+# $ size    : int [1:3] 20 21 19
+# - attr(*, "class")= chr "kmeans"
+
 fitK <- Kmeans(MyToothGrowth,3,method="manhattan")
 str(fitK)
 plot(MyToothGrowth, col=fitK$cluster,  pch = 19 )
+
+#List of 4
+# $ cluster : Named int [1:60] 1 1 1 1 1 1 1 1 1 1 ...
+#  ..- attr(*, "names")= chr [1:60] "1" "2" "3" "4" ...
+# $ centers : num [1:3, 1:2] 8.45 26.06 17.07 0.5 1.73 ...
+#  ..- attr(*, "dimnames")=List of 2
+#  .. ..$ : chr [1:3] "1" "2" "3"
+#  .. ..$ : chr [1:2] "len" "dose"
+# $ withinss: num [1:3] 1.55 11.09 7.04
+# $ size    : int [1:3] 15 26 19
+# - attr(*, "class")= chr "kmeans"
