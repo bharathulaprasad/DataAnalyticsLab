@@ -20,6 +20,7 @@ boxplot(iris$Sepal.Length~iris$Species,col=topo.colors(3))
 plot(x=iris$Petal.Length,y=iris$Species)
 
 #2a
+PAICOL <- read.csv("PAICOL.csv")
 View(PAICOL)
 PAICOL$DATE=as.Date(PAICOL$DATE,origin=PAICOL$DATE[1])
 summary(PAICOL)
