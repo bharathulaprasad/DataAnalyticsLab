@@ -74,6 +74,9 @@ plot(petal.length ~ petal.width, data=iris_df,
 plot(1:25, pch=1:25)
 
 color1 <- c("red","green")
+color2 <- c("blue","yellow")
+color3 <- c("red","yellow")
+color4 <- c("blue","green")
 plot(petal.length ~ petal.width, data=iris_df, 
      main="Petal Length vs. Petal Width\nIris Dataset",
      xlab="Petal Length", ylab="Petal Width", 
@@ -99,8 +102,8 @@ plot(petalLength_setosa ~ petalWidth_setosa, data=iris_df,
 plot(petalLength_versicolor ~ petalWidth_versicolor, data=iris_df,
      xlab="Petal Length",
      ylab=" Petal Width",
-     main =" Petal Length vs Petal width (setosa)",
-     col = color2,
+     main =" Petal Length vs Petal width (versicolor)",
+     col = color3,
      cex = 1,
      pch = 16)
 
@@ -108,8 +111,8 @@ plot(petalLength_versicolor ~ petalWidth_versicolor, data=iris_df,
 plot(petalLength_virginica ~ petalWidth_virginica, data=iris_df,
      xlab="Petal Length",
      ylab=" Petal Width",
-     main =" Petal Length vs Petal width (setosa)",
-     col = color2,
+     main =" Petal Length vs Petal width (virginica)",
+     col = color4,
      cex = 1,
      pch = 16)
 
