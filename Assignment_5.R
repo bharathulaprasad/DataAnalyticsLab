@@ -114,6 +114,7 @@ plot(petalLength_virginica ~ petalWidth_virginica, data=iris_df,
      pch = 16)
 
 # Question 4(c)
+library(proxy)
 l <- list(petalLength_setosa, petalLength_versicolor)
 simil(l, method="cosine")
 
